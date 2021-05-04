@@ -21,23 +21,23 @@ class JSON {
     private string|null $minified_json;
 
     public function __construct(string $json) {
-        $this->Set($json);
+        $this->set($json);
     }
 
-    public function Set(string $json):void {
+    public function set(string $json):void {
         $this->original_json = $json;
-        $this->minified_json = self::Minify($json);
+        $this->minified_json = self::minify($json);
     }
 
-    public function Get():string|null {
+    public function get():string|null {
         return $this->minified_json;
     }
 
-    public function Print():void {
-        print($this->Get());
+    public function print():void {
+        print($this->get());
     }
 
-    public static function Minify(string $json):string {
+    public static function minify(string $json):string {
 
         $tokenizer = "/\"|(\/\*)|(\*\/)|(\/\/)|\n|\r/";
         $in_string = false;

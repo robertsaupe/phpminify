@@ -20,23 +20,23 @@ class HTML {
     private string|null $minified_html;
 
     public function __construct(string $html) {
-        $this->Set($html);
+        $this->set($html);
     }
 
-    public function Set(string $html):void {
+    public function set(string $html):void {
         $this->original_html = $html;
-        $this->minified_html = self::Minify($html);
+        $this->minified_html = self::minify($html);
     }
 
-    public function Get():string|null {
+    public function get():string|null {
         return $this->minified_html;
     }
 
-    public function Print():void {
-        print($this->Get());
+    public function print():void {
+        print($this->get());
     }
 
-    public static function Minify(string $html):string|null {
+    public static function minify(string $html):string|null {
 
         $search = array(
             '/(\n|^)(\x20+|\t)/',
