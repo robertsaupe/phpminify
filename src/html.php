@@ -9,12 +9,12 @@
  * @link https://github.com/robertsaupe/phpminify
  * @license MIT License
  * 
- * Based on https://stackoverflow.com/a/48123642
+ * based on https://stackoverflow.com/a/48123642
  */
 
-namespace RobertSaupe\Minify;
+namespace robertsaupe\minify;
 
-class HTML {
+class html {
 
     private string $original_html;
     private string|null $minified_html;

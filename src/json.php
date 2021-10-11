@@ -9,13 +9,13 @@
  * @link https://github.com/robertsaupe/phpminify
  * @license MIT License
  * 
- * Based on JSON.minify (https://github.com/getify/JSON.minify) by Kyle Simspon (https://github.com/getify)
+ * based on JSON.minify (https://github.com/getify/JSON.minify) by Kyle Simspon (https://github.com/getify)
  * JSON.minify is released under MIT license.
  */
 
-namespace RobertSaupe\Minify;
+namespace robertsaupe\minify;
 
-class JSON {
+class json {
 
     private string $original_json;
     private string|null $minified_json;

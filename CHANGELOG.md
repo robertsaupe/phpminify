@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.0 - 2021-10-11
+- namespace correction
+
 ## 1.1.0 - 2021-05-04
 - coding standards
 
